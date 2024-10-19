@@ -1,6 +1,5 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZombifiedV2/Kavo-UI-Library/main/source.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/ZombifiedV2/KeylessHub/main/source.lua"))()
 local Window = Library.CreateLib("KeylessHub", "DarkTheme")
-
 
 -- Universal 
 local Universal = Window:NewTab("Universal")
@@ -20,6 +19,9 @@ end)
 UniversalSection:NewButton("UNC Test", "tests the percentage of scripts will work with your executor", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/unified-naming-convention/NamingStandard/main/UNCCheckEnv.lua", true))()
 end)
+UniversalSection:NewButton("Fling All", "make sure your game has collisions enabled", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
+end)
 
 -- Bedwars
 local Bedwars = Window:NewTab("Bedwars")
@@ -29,4 +31,14 @@ BedwarsSection:NewButton("Vape V4", "The Best and most popular bedwars script!",
 end)
 BedwarsSection:NewButton("Alsploit", "fastest alternative to vape", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/AlSploit/AlSploit/main/AlSploit/Bedwars/Loader.lua"))() 
+end)
+
+-- Doors
+local Doors = Window:NewTab("Doors")
+local DoorsSection = Doors:NewSection("Doors")
+DoorsSection:NewButton("BlackKing", "Best and most popular doors script!", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/DarkDoorsKing/Doors/main/Main'))()
+end)
+DoorsSection:NewButton("Exolution", "OP Doors script!", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ExolutionProject/Scripts/main/ExolutionPremiumHub.lua'))()
 end)
